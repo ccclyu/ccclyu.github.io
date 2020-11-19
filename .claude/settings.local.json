@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:manishs.org)",
+      "WebFetch(domain:www.amazon.com)",
+      "WebFetch(domain:brickset.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:www.lego.com)"
+    ]
+  }
+}

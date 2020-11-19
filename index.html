@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Changlong Yu - Researcher and developer specializing in natural language processing, large language models, and reinforcement learning.">
+    <meta name="keywords" content="Changlong Yu, NLP, LLM, reinforcement learning, machine learning, research">
+    <meta name="author" content="Changlong Yu">
+    <title>Changlong Yu - AI Researcher & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'warm-bg': '#F8F6F1',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .theme-transition {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        /* Optimize fonts */
+        body {
+            font-family: "Alegreya Sans", sans-serif;
+            font-display: swap;
+        }
+        .bullet-list {
+            list-style: none;
+        }
+        .bullet-list li {
+            position: relative;
+            margin: 0.5rem 0;
+        }
+        .bullet-list li:before {
+            content: "–";
+            color: #92400e;
+            position: absolute;
+            left: -1.5rem;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        #publications h3,
+        #publications p {
+            font-family: "Alegreya Sans", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-warm-bg theme-transition min-h-screen">
+    <div class="max-w-3xl mx-auto p-6 sm:p-8 lg:p-16">
+        <!-- Header -->
+        <header class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 lg:mb-12" role="banner">
+            <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 lg:mb-0">Changlong Yu</h1>
+            <nav class="flex flex-wrap gap-4 lg:gap-6 text-sm" role="navigation" aria-label="Main navigation">
+                <a href="#about" class="text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors">about</a>
+                <a href="#experience" class="text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors">experience</a>
+                <a href="#publications" class="text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors">publications</a>
+                <a href="#contact" class="text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors">contact</a>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <main>
+        <section id="about" class="mb-12" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="sr-only">About</h2>
+            <div class="prose prose-gray max-w-none">
+                <p class="text-gray-800 leading-relaxed mb-6">
+                    I am a researcher and developer with expertise in natural language processing and large language models.
+                    My work focuses on training intelligent LLM agents to solve real-world problems in domains such as coding and shopping.
+                    Check out my <a href="https://scholar.google.com/citations?hl=en&user=IxrYJ6EAAAAJ" class="text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Visit Google Scholar profile (opens in new tab)">Google Scholar</a> for publications.
+                </p>
+                <p class="text-gray-800 leading-relaxed">
+                    Currently, I am training Amazon Rufus models and improving RL efficiency
+                    from both algorithmic (<em>off-policy</em>, <em>adaptive rollout</em>) and system design (<em>async RL</em>, <em>rollout middleware</em>) perspectives. I actively contribute to open-source RL projects such as veRL and Megatron-Bridge.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12" aria-labelledby="experience-heading">
+            <h2 id="experience-heading" class="text-lg font-medium text-gray-900 mb-6">Experience</h2>
+            <ul class="bullet-list pl-6">
+                <li class="my-2">
+                    <span class="text-gray-800">Senior Applied Scientist @Amazon (Now)</span>
+                </li>
+                <li class="my-2">
+                    <span class="text-gray-800">Research Intern @MSR and @Tencent AI</span>
+                </li>
+                <li class="my-2">
+                    <span class="text-gray-800">CS PhD @HKUST</span>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mb-12" aria-labelledby="publications-heading">
+            <h2 id="publications-heading" class="text-lg font-medium text-gray-900 mb-6">Selected Publications</h2>
+            <ul class="space-y-8">
+                <li class="border-l-4 border-amber-200 pl-4">
+                    <h3 class="text-gray-800 font-medium mb-2 leading-relaxed">Approximation of Log-Partition Function in Policy Mirror Descent Induces Implicit Regularization for LLM Post-Training</h3>
+                    <div class="text-sm text-amber-700 font-medium mb-2 flex items-center gap-2">
+                        <span>ICML, 2026</span>
+                        <span class="text-gray-400">•</span>
+                        <a href="https://github.com/horizon-rl/OpenKimi" class="inline-flex items-center text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="View code for PMD LLM Post-Training (opens in new tab)">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            OpenKimi
+                        </a>
+                        <span class="text-gray-400">•</span>
+                        <a href="https://zhenghaoxu.notion.site/Revisiting-Kimi-s-Policy-Mirror-Descent-2fe7f18c8c2a801ba0d5fba25690f5ce" class="inline-flex items-center text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Read blog post about PMD LLM Post-Training (opens in new tab)">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M61.35 0.227l-55.333 4.087C1.553 4.7 0 7.617 0 11.113v60.66c0 2.723 0.967 5.053 3.3 8.167l13.007 16.913c2.137 2.723 4.08 3.307 8.16 3.113l64.257 -3.89c5.433 -0.387 6.99 -2.917 6.99 -7.193V20.64c0 -2.21 -0.873 -2.847 -3.443 -4.733L74.167 3.143c-4.273 -3.107 -6.02 -3.5 -12.817 -2.917zM25.92 19.523c-5.247 0.353 -6.437 0.433 -9.417 -1.99L8.927 11.507c-0.77 -0.78 -0.383 -1.753 1.557 -1.947l53.193 -3.887c4.467 -0.39 6.793 1.167 8.54 2.527l9.123 6.61c0.39 0.197 1.36 1.36 0.193 1.36l-54.933 3.307 -0.68 0.047zM19.803 88.3V30.367c0 -2.53 0.777 -3.697 3.103 -3.893L86 22.78c2.14 -0.193 3.107 1.167 3.107 3.693v57.547c0 2.53 -0.39 4.67 -3.883 4.863l-60.377 3.5c-3.493 0.193 -5.043 -0.97 -5.043 -4.083zm59.6 -54.827c0.387 1.75 0 3.5 -1.75 3.7l-2.91 0.577v42.773c-2.527 1.36 -4.853 2.137 -6.797 2.137 -3.107 0 -3.883 -0.973 -6.21 -3.887l-19.03 -29.94v28.967l6.02 1.363s0 3.5 -4.857 3.5l-13.39 0.777c-0.39 -0.78 0 -2.723 1.357 -3.11l3.497 -0.97v-38.3L30.48 40.667c-0.39 -1.75 0.58 -4.277 3.3 -4.473l14.367 -0.967 19.8 30.327v-26.83l-5.047 -0.58c-0.39 -2.143 1.163 -3.7 3.103 -3.89l13.4 -0.78z"/></svg>
+                            Blog
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed">Reproduce Kimi K1.5/K2 RL algorithm and theoretically understand PMD as regularization in LLM post training
+                    </p>
+                </li>
+                <li class="border-l-4 border-amber-200 pl-4">
+                    <h3 class="text-gray-800 font-medium mb-2 leading-relaxed">CoMem: Context Management with A Decoupled Long-Context Model</h3>
+                    <div class="text-sm text-amber-700 font-medium mb-2 flex items-center gap-2">
+                        <span>ICML, 2026</span>
+                        <span class="text-gray-400">•</span>
+                        <a href="https://github.com/horizon-llm/CoMem/" class="inline-flex items-center text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="View code for CoMem (opens in new tab)">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            CoMem
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed">k-step-off asynchronous pipeline overlapping memory model's summarization with agent's inference.</p>
+                </li>
+                <li class="border-l-4 border-amber-200 pl-4">
+                    <h3 class="text-gray-800 font-medium mb-2 leading-relaxed">Improving Sampling Efficiency in RLVR through Adaptive Rollout and Response Reuse</h3>
+                    <div class="text-sm text-amber-700 font-medium mb-2 flex items-center gap-2">
+                        <span>ArXiv, 2025</span>
+                        <span class="text-gray-400">•</span>
+                        <a href="https://github.com/horizon-rl/adaptive-rollout/" class="inline-flex items-center text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="View code for Adaptive Rollout (opens in new tab)">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            Adaptive Rollout
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed">Dynamically allocate rollout budgets and reuse previous correct responses for RLVR sampling effiency.</p>
+                </li>
+                <li class="border-l-4 border-amber-200 pl-4">
+                    <h3 class="text-gray-800 font-medium mb-2 leading-relaxed">Think-RM: Enabling Long-Horizon Reasoning in Generative Reward Models</h3>
+                    <div class="text-sm text-amber-700 font-medium mb-2 flex items-center gap-2">
+                        <span>NeurIPS, 2025</span>
+                        <span class="text-gray-400">•</span>
+                        <a href="https://github.com/horizon-rl/Think-RM" class="inline-flex items-center text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="View code for Think-RM (opens in new tab)">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            Think-RM
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed">A novel framework for RL training of Generative Reward Models enhanced with reasoning processes.</p>
+                </li>
+                <li class="border-l-4 border-amber-200 pl-4">
+                    <h3 class="text-gray-800 font-medium mb-2 leading-relaxed">WebAgent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning</h3>
+                    <div class="text-sm text-amber-700 font-medium mb-2 flex items-center gap-2">
+                        <span>EMNLP, 2025</span>
+                        <span class="text-gray-400">•</span>
+                        <a href="https://github.com/weizhepei/WebAgent-R1" class="inline-flex items-center text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="View code for WebAgent-R1 (opens in new tab)">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            WebAgent-R1
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed">Effective WebAgent training with multi-turn RL and verifiable rewards.</p>
+                </li>
+            </ul>
+        </section>
+        </main>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="border-t border-gray-200 pt-8" role="contentinfo" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="sr-only">Contact</h2>
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                <p class="text-sm text-gray-600">
+                    Feel free to reach out for collaborations or discussions.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="mailto:changlong.ycl@gmail.com" class="text-sm text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" aria-label="Send email to changlong.ycl@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/changlong-yu/" class="text-sm text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Visit Changlong Yu's LinkedIn profile (opens in new tab)">LinkedIn</a>
+                    <a href="https://github.com/ccclyu" class="text-sm text-gray-700 hover:text-amber-500 underline decoration-amber-500 underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Visit Changlong Yu's GitHub profile (opens in new tab)">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Simple Analytics - Privacy-focused visitor tracking -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+    <!-- Navigation and smooth scrolling -->
+    <script defer>
+        // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
